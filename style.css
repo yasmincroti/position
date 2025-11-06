@@ -17,7 +17,7 @@ body {
 
 header {
   background-color: #d87ca1;
-  color: #3f2a3c;
+  color: #ffd6e7;
   padding-block: 2rem;
   position: fixed;
   width: 100%;
@@ -49,12 +49,12 @@ header {
 .header-conteiner a:hover {
   transform: scale(1.1);
   font-weight: bold;
-  color: #ffd1e8;
+  color: #ffe6f2;
   transition: ease-in-out 0.4s;
 }
 
 main {
-  background: #f9c4d2;
+  background: #fad4de;
   min-height: calc(100svh - 11rem);
   padding-block: 15.8rem 4rem;
 }
@@ -75,20 +75,20 @@ main {
 .main-conteiner section div {
   width: 6rem;
   height: 6rem;
-  background: #fadde1;
+  background: #ffcdd4;
   margin-bottom: 1rem;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
 }
 
 .main-conteiner section .pastel {
-  background: #ffb6ce;
+  background: #ffa8c5;
 }
 
 .main-conteiner h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #6b375a;
+  color: #d63781;
 }
 
 .main-conteiner p {
@@ -96,7 +96,7 @@ main {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2rem;
-  color: #4b2c3f;
+  color: #531632;
 }
 
 .main-conteiner #relative .pastel {
