@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #ffe6f0;
+}
+
+header {
+  background-color: #d87ca1;
+  color: #3f2a3c;
+  padding-block: 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header-conteiner {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header-conteiner ul {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+.header-conteiner a {
+  color: #fff0f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-conteiner a:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  color: #ffd1e8;
+  transition: ease-in-out 0.4s;
+}
+
+main {
+  background: #f9c4d2;
+  min-height: calc(100svh - 11rem);
+  padding-block: 15.8rem 4rem;
+}
+
+.main-conteiner {
+  max-width: 120rem;
+  margin: 0 auto;
+  line-height: 2.4rem;
+}
+
+.main-conteiner section {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-conteiner section div {
+  width: 6rem;
+  height: 6rem;
+  background: #fadde1;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
+}
+
+.main-conteiner section .pastel {
+  background: #f48fb1;
+}
+
+.main-conteiner h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #6b375a;
+}
+
+.main-conteiner p {
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4b2c3f;
+}
+
+.main-conteiner #relative .pastel {
+  position: relative;
+  bottom: 1.5rem;
+  right: 1rem;
+}
+
+.main-conteiner #absolute {
+  position: relative;
+  z-index: 1;
+}
+
+.main-conteiner #absolute .pastel {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.main-conteiner #fixed .pastel {
+  position: fixed;
+  top: 12rem;
+  left: 8rem;
+  opacity: 0.9;
+}

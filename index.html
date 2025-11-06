@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position no CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-conteiner" id="header">
+      <nav>
+        <ul>
+          <li><a href="#header">home</a></li>
+          <li><a href="#static">Position: static</a></li>
+          <li><a href="#relative">Position: relative</a></li>
+          <li><a href="#absolute">Position: absolute</a></li>
+          <li><a href="#fixed">Position: fixed</a></li>
+        </ul>
+      </nav>
+      <h1>Position no CSS</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-conteiner">
+      <section id="static">
+        <h2>Position: static</h2>
+        <p>O valor <strong>position: static</strong> é o comportamento natural dos elementos HTML. Nesse modo, cada item
+          ocupa o seu lugar conforme o fluxo comum da página, seguindo a ordem de cima para baixo e da esquerda para a
+          direita. Como o elemento não reage a propriedades como <strong>top</strong>, <strong>right</strong>,
+          <strong>bottom</strong> ou <strong>left</strong>, ele permanece fixo na estrutura padrão, sem criar camadas ou
+          interferir em outros elementos. É a base estável do posicionamento no CSS, usada quando não se deseja mover
+          manualmente o conteúdo.</p>
+      </section>
+
+      <section id="relative">
+        <h2>Position: relative</h2>
+        <p>Com o <strong>position: relative</strong>, um elemento pode ser movido levemente em relação ao seu ponto de
+          origem, sem sair do fluxo normal do layout. Isso quer dizer que ele ainda ocupa o mesmo espaço, mas pode ser
+          deslocado usando top, right, bottom ou left. Esse tipo de posicionamento é ideal para ajustes sutis ou para
+          servir como referência a outros elementos com <strong>position: absolute</strong>, criando uma hierarquia
+          controlada e visualmente equilibrada.</p>
+
+        <div></div>
+        <div class="pastel"></div>
+        <div></div>
+      </section>
+
+      <section id="absolute">
+        <h2>Position: absolute</h2>
+        <p>O <strong>position: absolute</strong> retira o elemento do fluxo da página e o posiciona de acordo com o seu
+          ancestral mais próximo que não seja estático. Se não existir nenhum, ele será alinhado em relação ao documento
+          principal. Isso permite colocar itens sobre outros, criar caixas flutuantes ou composições mais livres no
+          layout. Porém, por não ocupar espaço no fluxo, é importante usá-lo com cuidado para evitar sobreposições
+          indesejadas.</p>
+
+        <div></div>
+        <div class="pastel"></div>
+        <div></div>
+      </section>
+
+      <section id="fixed">
+        <h2>Position: fixed</h2>
+        <p>O <strong>position: fixed</strong> fixa o elemento em uma posição específica da tela, independentemente da
+          rolagem. Ele se ancora na janela do navegador, e não no restante do conteúdo. Esse comportamento é perfeito
+          para criar menus fixos, botões flutuantes ou cabeçalhos que permanecem visíveis mesmo quando o usuário
+          desliza a página.</p>
+
+        <div></div>
+        <div class="pastel"></div>
+        <div></div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
