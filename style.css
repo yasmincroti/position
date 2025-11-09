@@ -81,7 +81,7 @@ main {
   box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
 }
 
-.main-conteiner section .pastel {
+.main-conteiner section {
   background: #ffa8c5;
 }
 
@@ -99,7 +99,7 @@ main {
   color: #531632;
 }
 
-.main-conteiner #relative .pastel {
+.main-conteiner #relative {
   position: relative;
   bottom: 1.5rem;
   right: 1rem;
@@ -110,7 +110,7 @@ main {
   z-index: 1;
 }
 
-.main-conteiner #absolute .pastel {
+.main-conteiner #absolute {
   position: absolute;
   top: 2rem;
   left: 50%;
@@ -118,7 +118,7 @@ main {
   z-index: 1;
 }
 
-.main-conteiner #fixed .pastel {
+.main-conteiner #fixed {
   position: fixed;
   top: 12rem;
   left: 8rem;
